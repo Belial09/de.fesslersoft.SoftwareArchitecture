@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_strategy_pattern", "01_strategy_pattern\01_strategy_pattern.csproj", "{3EDDAF40-FFEE-4D3F-8B2E-1920B3CD821B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_strategy_pattern_tests", "01_strategy_pattern_tests\01_strategy_pattern_tests.csproj", "{A0E3CF2B-3CDF-497B-B170-3AC6AB8F0A82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3EDDAF40-FFEE-4D3F-8B2E-1920B3CD821B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EDDAF40-FFEE-4D3F-8B2E-1920B3CD821B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EDDAF40-FFEE-4D3F-8B2E-1920B3CD821B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0E3CF2B-3CDF-497B-B170-3AC6AB8F0A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E3CF2B-3CDF-497B-B170-3AC6AB8F0A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E3CF2B-3CDF-497B-B170-3AC6AB8F0A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E3CF2B-3CDF-497B-B170-3AC6AB8F0A82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
