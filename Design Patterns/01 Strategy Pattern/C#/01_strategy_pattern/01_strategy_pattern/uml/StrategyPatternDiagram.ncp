@@ -1,0 +1,116 @@
+<Project>
+  <Name>Unbenannt</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>01_strategy_pattern.exe</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Interface">
+        <Name>IItem</Name>
+        <Access>Internal</Access>
+        <Location left="1166" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">Guid Identifier { get; }</Member>
+        <Member type="Property">String Name { get; }</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IPaymentMethod</Name>
+        <Access>Internal</Access>
+        <Location left="672" top="12" />
+        <Size width="210" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">String getPaymentMethodName()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>Program</Name>
+        <Access>Internal</Access>
+        <Location left="1487" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public Program()</Member>
+        <Member type="Method">private static Void Main(String[] args)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Item</Name>
+        <Access>Internal</Access>
+        <Location left="1166" top="281" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public Guid Identifier { get; }</Member>
+        <Member type="Property">public String Name { get; }</Member>
+        <Member type="Constructor">public Item(String name)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ShoppingCart</Name>
+        <Access>Internal</Access>
+        <Location left="1399" top="281" />
+        <Size width="347" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;Tuple&lt;IItem, IPaymentMethod&gt;&gt; _items</Member>
+        <Member type="Constructor">public ShoppingCart()</Member>
+        <Member type="Method">public Void AddItem(IItem item, IPaymentMethod paymentMethod)</Member>
+        <Member type="Method">public Void removeItem(IItem item)</Member>
+        <Member type="Method">public Void Checkout()</Member>
+        <Modifier>Sealed</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CreditCard</Name>
+        <Access>Internal</Access>
+        <Location left="672" top="281" />
+        <Size width="204" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public CreditCard()</Member>
+        <Member type="Method">public String getPaymentMethodName()</Member>
+        <Modifier>Sealed</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Klarna</Name>
+        <Access>Internal</Access>
+        <Location left="429" top="281" />
+        <Size width="206" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public Klarna()</Member>
+        <Member type="Method">public String getPaymentMethodName()</Member>
+        <Modifier>Sealed</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PayPal</Name>
+        <Access>Internal</Access>
+        <Location left="898" top="281" />
+        <Size width="203" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public PayPal()</Member>
+        <Member type="Method">public String getPaymentMethodName()</Member>
+        <Modifier>Sealed</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Realization" first="3" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1247</X>
+          <Y>255</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1247</X>
+          <Y>253</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Realization" first="5" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="6" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="7" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
